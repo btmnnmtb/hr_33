@@ -1,0 +1,28 @@
+﻿<Window x:Class="hr_33.second"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:hr_33"
+        mc:Ignorable="d"
+        Title="second" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        
+        <TextBox x:Name="Poi" Grid.ColumnSpan="2"/>
+        <Button Grid.Column="2" Click="Button_Click"/>
+        <DataGrid Name="table_2" Grid.Column="0" Grid.ColumnSpan="3" Grid.Row="2" />
+        
+
+    </Grid>
+</Window>
